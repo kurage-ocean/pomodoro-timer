@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>ポモドーロタイマー</title>	
+<link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<div class="wrapper">
+		
+		<h1 class="ttl-red" id="ttl">ポモドーロタイマー</h1>
+		
+		<div class="timer work" id="bg_color">
+			<p id="PassageArea">25:00</p>
+			<div class="panel">
+				<button class="start btn btn-fade" id="startcount" onClick="startShowing()">
+					<p class="panel-font">作業開始</p>
+				</button>
+				<button class="btn btn-fade" id="short_break" onClick="ShortBreak()">
+					<p class="panel-font">短い休憩</p>
+				</button>
+				<button class="btn btn-fade" id="long_break" onClick="LongBreak()">
+					<p class="panel-font">長い休憩</p>
+				</button>
+				<button class="stop btn" id="endcount"   onClick="stopShowing()">
+					<p class="panel-font">リセット</p>
+				</button>
+			</div>
+			
+			<div class="about">
+				<p class="about-font">・作業開始で25分、短い休憩で5分、長い休憩で15分、リセットでタイマーをリセットします。</p>
+				<p class="about-font">・「25分の作業＋5分の休憩」を1セット、4セットごとに15分間の休憩を取りましょう。</p>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="js/pomodoro.js"></script>
+</body>
+</html>
